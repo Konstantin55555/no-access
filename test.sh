@@ -3,6 +3,8 @@ source keycloak-login.sh
 
 CLIENT=account-console
 
+CLIENT=account
+
 REALMS=("${INXMAIL_REALM}" "${NXP_REALM}" "${LOGIN_REALM}")
 for i in "${!REALMS[@]}"; do
   echo "Create client ${CLIENT} in realm ${REALMS[i]}"
